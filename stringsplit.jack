@@ -1,0 +1,50 @@
+class stringsplit {
+// spliting string
+function Array split(String str, String delim) {
+  var int length;
+  var Array arr;
+  var int i, j;
+  var String temp;
+  
+  let length = stringsplit.countWords(str, delim);
+  let arr = Array.new(length);
+  let i = 0;
+  let j = 0;
+  let temp = String.new(20);
+  while (i < str.length()) {
+    if (str.charAt(i) = delim.charAt(0)) {
+        let arr[j] = temp;
+        let temp = String.new(20);
+        let j = j + 1;
+    } else {
+        do temp.appendChar(str.charAt(i));
+    }
+    let i = i + 1;
+  }
+  let arr[j] = temp;
+  return arr;
+}
+// counting words
+  function int countWords(String str, String delim) {
+      var int count;
+      var int i;
+	var int k;
+let k = str.length();
+      if (k = 0) {
+        return 0;
+      }
+
+      let count = 0;
+      let i = 0;
+      while (i < k) {
+        if (str.charAt(i) = delim.charAt(0)) {
+          let count = count + 1;
+        }
+        let i = i + 1;
+      }
+
+      return (count + 1);
+    }
+    
+    }
+

@@ -1,0 +1,25 @@
+class Main {
+  function void main() {
+    var String str2;
+    var Array arr;
+    var int i;
+      let str2 = Keyboard.readLine("String: ");
+      let arr = stringsplit.split(str2, " ");
+
+      let i = 0;
+      do Output.printString("[");
+      while (i < stringsplit.countWords(str2, " ")) {
+        do Output.printString(arr[i]);
+
+        if (i < (stringsplit.countWords(str2, " ") - 1)) {	
+		do Output.printString(", ");
+        }
+
+        let i = i + 1;
+      }
+      do Output.printString("]");
+    return;
+ }
+
+    }
+
